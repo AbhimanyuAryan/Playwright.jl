@@ -1,0 +1,3 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Playwright = "246d5a2c-e8ad-4f7d-a897-5346511128f4"
