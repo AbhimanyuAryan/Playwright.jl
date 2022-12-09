@@ -23,7 +23,7 @@ function __init__()
 
   @info "Installing Python Playwright drivers..."
 
-  playwrightdrivers = joinpath(Conda.BINDIR, "playwright")
+  playwrightdrivers = joinpath(Sys.iswindows() ? Conda.SCRIPTDIR : Conda.BINDIR, "playwright")
   run(`$playwrightdrivers install`)
 
   copy!(sync_playwright, pyimport("playwright.sync_api").sync_playwright)
